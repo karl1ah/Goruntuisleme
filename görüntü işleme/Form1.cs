@@ -355,14 +355,14 @@ namespace görüntü_işleme
 
         }
 
-        private void btnparlaklıkazlt_Click(object sender, EventArgs e)
-        {
-            Bitmap image = new Bitmap(pbxparlaklıkeski.Image);
+       // private void btnparlaklıkazlt_Click(object sender, EventArgs e)
+        //{
+           // Bitmap image = new Bitmap(pbxparlaklıkeski.Image);
 
-            Bitmap parlaklık = parlaklıkazalt(image);
+           // Bitmap parlaklık = parlaklıkazalt(image);
 
-            pbxparlaklıkyeni.Image = parlaklık;
-        }
+           // pbxparlaklıkyeni.Image = parlaklık;
+       //}
 
         private void btnnegatifresimal_Click(object sender, EventArgs e)
         {
