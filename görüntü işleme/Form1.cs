@@ -102,37 +102,37 @@ namespace görüntü_işleme
             }
             return bmp;
         }
-        private Bitmap parlaklıkazalt(Bitmap bmp)
-        {
-            for (int i = 0; i < bmp.Height; i++)
-            {
-                for (int j = 0; j < bmp.Width; j++)
-                {
-                    double red = bmp.GetPixel(i, j).R;
-                    double green = bmp.GetPixel(i, j).G;
-                    double blue = bmp.GetPixel(i, j).B;
-                    red = red - 100;
-                    green -= 100;
-                    blue -= 100;
-                    if (red <= 0)
-                    {
-                        red = 0;
-                    }
-                    if (green <= 0)
-                    {
-                        green = 0;
-                    }
-                    if (blue <= 0)
-                    {
-                        blue = 0;
-                    }
-                    Color renk = Color.FromArgb(Convert.ToInt32(red), Convert.ToInt32(green), Convert.ToInt32(blue));
-                    bmp.SetPixel(i, j, renk);
+        //private Bitmap parlaklıkazalt(Bitmap bmp)
+        //{
+           // for (int i = 0; i < bmp.Height; i++)
+           // {
+               // for (int j = 0; j < bmp.Width; j++)
+               // {
+                   // double red = bmp.GetPixel(i, j).R;
+                  //  double green = bmp.GetPixel(i, j).G;
+                  //  double blue = bmp.GetPixel(i, j).B;
+                   // red = red - 100;
+                   // green -= 100;
+                  //  blue -= 100;
+                   // if (red <= 0)
+                  //  {
+                   //     red = 0;
+                  //  }
+                  //  if (green <= 0)
+                  //  {
+                 //       green = 0;
+                   // }
+                  //  if (blue <= 0)
+                 //   {
+                 //       blue = 0;
+                  //  }
+                 //   Color renk = Color.FromArgb(Convert.ToInt32(red), Convert.ToInt32(green), Convert.ToInt32(blue));
+                  //  bmp.SetPixel(i, j, renk);
 
-                }
-            }
-            return bmp;
-        }
+               // }
+          //  }
+         //   return bmp;
+      //  }
         private Bitmap negatıfı2(Bitmap bmp)
         {
             for (int i = 0; i < bmp.Height; i++)
